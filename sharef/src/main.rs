@@ -226,11 +226,13 @@ fn usage(){
 fn main() -> io::Result<()> {
     //get small ip from command line
     let args: Vec<String> = std::env::args().collect();
-    if args[1] == "-h" || args[1] == "--help"{
+    //if no args print Usage
+    if args.len() < 2 {
         usage();
         return Ok(());
     }
-    if args.len() < 2 {
+
+    if args[1] == "-h" || args[1] == "--help"{
         usage();
         return Ok(());
     }
