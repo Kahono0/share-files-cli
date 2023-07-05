@@ -8,3 +8,8 @@ edition = "2021"
 [dependencies]
 local-ip-address = "0.5.3"
 sha2 = "0.10.6"
+structopt = { version = "0.3", features = [ "paw" ] }
+paw = "1.0"
+zip = { version = "0.5.6", features = [ "deflate", "bzip2" ] }
+walkdir = "2.3.1"
+zip-extract = "0.1.2"
