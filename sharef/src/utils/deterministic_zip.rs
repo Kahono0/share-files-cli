@@ -99,7 +99,7 @@ where
     Ok(())
 }
 
-pub fn Zip(args: Opt) -> Result<(), std::io::Error> {
+pub fn zip_file(args: Opt) -> Result<(), std::io::Error> {
     let paths: Vec<(PathBuf, PathBuf)> = args
         .paths
         .into_iter()
