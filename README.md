@@ -21,10 +21,21 @@ sharef.exe
 sharef s <filename>
 ```
 
+### Sending folders
+```bash
+sharef sf <foldername>
+```
+
 ### Receiving files
 ```bash
 sharef r <address>
 ```
+
+### Receiving folders
+```bash
+sharef rf <address>
+```
+
 Note: The address will be given by the sender.
 
 ## known issues
